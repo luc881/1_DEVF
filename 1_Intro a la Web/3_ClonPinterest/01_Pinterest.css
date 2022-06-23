@@ -1,0 +1,377 @@
+.top {
+    display: flex;
+    width: 100vw;
+    height: 80px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #ffffff;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.derecha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    display: inline-block;
+    font-style: oblique;
+    color: red;
+    margin: 0 15px 0 30px;
+}
+
+.titulo img{
+    width: 30px;
+    height: 30px;
+}
+
+.btninicio {
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    font-size: 17px;
+    padding: 15px 16px;
+    border: none;
+}
+
+.btnhoy {
+    background-color: white;
+    border-radius: 25px;
+    color: black;
+    font-size: 17px;
+    padding: 15px 16px;
+    margin: 0 15px 0 5px;
+    border: none;
+}
+
+.btninicio:hover{
+    cursor: pointer;
+}
+
+.btnhoy:hover{
+    cursor: pointer;
+}
+
+.izquierda {
+    display: flex;
+    margin: 0 30px 0 5px;
+    padding: 0;
+}
+
+
+
+.search__bar {
+    display: flex;
+    align-items: center;
+    background-color: rgb(234, 234, 234);
+    height: 25px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    width: 100%;
+    margin: 0 ;
+}
+
+.search__bar:hover{
+    background-color: rgb(223, 223, 223);
+}
+
+
+.search__bar input {
+    flex-grow: 1;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+.search__buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.btnz1, .btnz2, .btnz3 {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    padding: 10px 13px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius:999px;
+    text-align: center;
+}
+
+.btnz1:hover, .btnz2:hover, .btnz3:hover{
+    background-color: rgb(208, 208, 208);
+}
+
+
+.btnz1 img {
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root {
+    --card_width: 250px;
+    --row_increment: 10px;
+    --card_border_radius: 16px;
+    --card_small: 26;
+    --card_medium: 33;
+    --card_large: 45;
+}
+
+
+.btnb2 {
+    position: relative;
+    background-color: white;
+    top: 93vh;
+    right: 3vw;
+    opacity: 1;
+    color: black;
+    font-size: 15px;
+    padding: 15px 22px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius:999px;
+    text-align: center;
+    box-shadow: 0 0 16px rgb(211, 211, 211);
+}
+.btnb2 img{
+    width: 18px;
+}
+
+.btnb2:hover{
+    background-color: #eaeaea;
+    opacity: 1;
+} 
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.pin_container {
+    margin: 75px 0 0 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, var(--card_width));
+    grid-auto-rows: var(--row_increment);
+    justify-content: center;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.card {
+    padding: 0;
+    margin: 15px 10px;
+    border-radius: var(--card_border_radius);
+    background-color: black;
+}
+
+.card img{
+    border-radius: inherit;
+}
+
+.card_small {
+    grid-row-end: span var(--card_small);
+}
+
+.card_medium {
+    grid-row-end: span var(--card_medium);
+}
+
+.card_large {
+    grid-row-end: span var(--card_large);
+}
+
+.card:hover > img{
+    opacity: 0.5;
+    cursor: zoom-in;
+}
+
+.btns {
+    position: relative;
+    top: -220px;
+    left: 120px;
+    background-color: #bd081d;
+    opacity: 0;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 12px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.card:hover > .btns {
+    background-color: #bd081d;
+    color: white;
+    opacity: 1;
+}
+
+.card:hover > .btns:hover {
+    background-color: #900617;
+}
+
+.btnm {
+    position: relative;
+    top: -290px;
+    left: 120px;
+    background-color: #bd081d;
+    opacity: 0;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 12px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.card:hover > .btnm {
+    background-color: #bd081d;
+    color: white;
+    opacity: 1;
+}
+
+.card:hover > .btnm:hover {
+    background-color: #900617;
+}
+
+.btnl {
+    position: relative;
+    top: -410px;
+    left: 120px;
+    background-color: #bd081d;
+    opacity: 0;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 12px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.card:hover > .btnl {
+    background-color: #bd081d;
+    color: white;
+    opacity: 1;
+}
+
+.card:hover > .btnl:hover {
+    background-color: #900617;
+}
+
+.btn1 {
+    position: relative;
+    top: -53px;
+    left: -88px;
+    opacity: 0;
+    color: black;
+    font-size: 15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius:999px;
+    text-align: center;
+}
+
+.card:hover > .btn1{
+    background-color: #eaeaea;
+    opacity: 1;
+}
+
+.card:hover > .btn1:hover{
+    background-color: white;
+}
+
+
+
+.btn2 {
+    position: relative;
+    top: -92px;
+    left: 145px;
+    opacity: 0;
+    color: black;
+    font-size: 15px;
+    padding: 2px 6px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius:999px;
+    text-align: center;
+}
+
+.card:hover > .btn2{
+    background-color: #eaeaea;
+    opacity: 1;
+}
+
+.card:hover > .btn2:hover{
+    background-color: white;
+}
+
+
+.btn3 {
+    position: relative;
+    top: -92px;
+    left: 150px;
+    opacity: 0;
+    color: black;
+    font-size: 15px;
+    padding: 2px 6px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius:999px;
+    text-align: center;
+}
+
+.card:hover > .btn3{
+    background-color: #eaeaea;
+    opacity: 1;
+}
+
+.card:hover > .btn3:hover{
+    background-color: white;
+}
+
+
+
+@media screen and (max-width: 760px){
+    .btninicio {
+        display: none;
+    }
+    
+    .btnhoy {
+        display: none;
+    }
+}
