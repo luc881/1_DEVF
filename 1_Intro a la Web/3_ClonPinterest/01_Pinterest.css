@@ -321,9 +321,7 @@ body {
     left: 145px;
     opacity: 0;
     color: black;
-    font-size: 15px;
-    padding: 2px 6px;
-    font-weight: bold;
+    padding: 5px 7px;
     border: none;
     cursor: pointer;
     border-radius:999px;
@@ -346,9 +344,7 @@ body {
     left: 150px;
     opacity: 0;
     color: black;
-    font-size: 15px;
-    padding: 2px 6px;
-    font-weight: bold;
+    padding: 5px 6px;
     border: none;
     cursor: pointer;
     border-radius:999px;
@@ -362,6 +358,10 @@ body {
 
 .card:hover > .btn3:hover{
     background-color: white;
+}
+
+.btn3 img, .btn2 img{
+    width: 18px;
 }
 
 
