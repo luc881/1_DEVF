@@ -139,7 +139,7 @@
 
 
 .btnb2 {
-    position: relative;
+    position: absolute;
     background-color: white;
     top: 93vh;
     right: 3vw;
@@ -162,6 +162,7 @@
     background-color: #eaeaea;
     opacity: 1;
 } 
+
 
 
 
